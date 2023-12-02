@@ -1,0 +1,23 @@
+{
+  "name": "ai-jokes-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guptag0808/Ai-Jokes-Assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guptag0808/Ai-Jokes-Assignment/issues"
+  },
+  "homepage": "https://github.com/guptag0808/Ai-Jokes-Assignment#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
