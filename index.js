@@ -97,11 +97,14 @@ function displayLeaderboard() {
 
     // Sort jokes based on highest ratings
     const sortedJokes = Object.keys(highestRatings).sort((a, b) => highestRatings[b] - highestRatings[a]);
-
+  
     // Display the leaderboard
-    console.log('🏆 Leaderboard:');
-    sortedJokes.forEach((joke) => {
-      console.log(`${joke}: Highest Rating - ${highestRatings[joke]}`);
-    });
+	console.log('🏆 Leaderboard:')
+	for(let i=0;i<5;i++){
+		let joke= sortedJokes[i]
+		console.log(`${joke}: Highest Rating - ${highestRatings[joke]}`);
+	}
+    ;
+   
   });
 }
