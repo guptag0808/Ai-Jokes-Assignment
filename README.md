@@ -43,18 +43,10 @@ https://drive.google.com/file/d/1Vf2dTLKC0wonmb2RHFfaWhFRyPw6txdS/view?usp=shari
 
   View Leaderboard
 6. To view the highest-rated joke on the leaderboard:
-
 - node index.js leaderboard
-- Example
+
 - Fetch jokes about "Money":
-
+-Example
 - node index.js Money
-7. Save and rate a joke:
 
 
-- node index.js cats
-
-8. View the leaderboard:
-
-
-- node index.js leaderboard
