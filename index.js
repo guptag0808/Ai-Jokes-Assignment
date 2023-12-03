@@ -2,19 +2,24 @@
 const fs = require('fs');
 const request = require('request');
 
+// API URL for fetching jokes
 const apiUrl = 'https://icanhazdadjoke.com/search';
 
+// Command line argument for search term
 const searchTerm = process.argv[2];
 
+// Check if the user wants to view the leaderboard
 if (searchTerm === 'leaderboard') {
   displayLeaderboard();
 } else if (searchTerm) {
+	// User provided a search term, initiate the joke search
   searchForJoke(searchTerm);
 } else {
   console.log('Please provide a search term or use "leaderboard" to view the leaderboard.');
   process.exit(1);
 }
 
+// Function to search for jokes based on the provided term
 function searchForJoke(searchTerm) {
   // Make a request to the joke API
   request({
@@ -43,6 +48,7 @@ function searchForJoke(searchTerm) {
   });
 }
 
+// Function to ask the user for rating the displayed joke
 function askForRating(joke) {
   const readline = require('readline').createInterface({
     input: process.stdin,
@@ -68,7 +74,7 @@ function saveRating(joke, rating) {
     if (err) console.error('Error saving rating to file:', err);
   });
 }
-
+// Function to display the leaderboard of jokes with highest ratings
 function displayLeaderboard() {
   fs.readFile('jokes.txt', 'utf-8', (err, data) => {
     if (err) {
@@ -100,6 +106,7 @@ function displayLeaderboard() {
   
     // Display the leaderboard
 	console.log('🏆 Leaderboard:')
+	// Display the top 5 jokes with highest ratings
 	for(let i=0;i<5;i++){
 		let joke= sortedJokes[i]
 		console.log(`${joke}: Highest Rating - ${highestRatings[joke]}`);
