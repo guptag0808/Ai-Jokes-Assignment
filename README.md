@@ -25,40 +25,36 @@ https://drive.google.com/file/d/1Vf2dTLKC0wonmb2RHFfaWhFRyPw6txdS/view?usp=shari
    git clone https://github.com/guptag0808/Ai-Jokes-Assignment.git
 
 
-2. Navigate to the project directory:
-
-- cd joke-cli-tool
-
-3. Install dependencies:
+2. Install dependencies:
 
 - npm install
-4. Usage
+3. Usage
    Fetch Jokes
 
-5. To fetch jokes based on a search term:
+4. To fetch jokes based on a search term:
 
 - node index.js your-search-term
 - Save and Rate a Joke
 
-6. To save and rate a joke:
+5. To save and rate a joke:
 
 - node index.js your-search-term
 - Follow the prompts to rate the joke out of 5.
 
   View Leaderboard
-7. To view the highest-rated joke on the leaderboard:
+6. To view the highest-rated joke on the leaderboard:
 
 - node index.js leaderboard
 - Example
 - Fetch jokes about "Money":
 
 - node index.js Money
-8. Save and rate a joke:
+7. Save and rate a joke:
 
 
 - node index.js cats
 
-9. View the leaderboard:
+8. View the leaderboard:
 
 
 - node index.js leaderboard
